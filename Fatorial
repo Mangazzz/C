@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, i;
+    
+    printf ("Digite um número e descubra o fatorial:\n");
+    scanf ("%d", &a);
+    
+    i=a-1;
+    
+    if (a == 0){
+        printf ("1");
+    }
+    
+    else {
+        while (i > 1){
+            a=a*i;
+            i--;
+        }
+    }
+    printf ("%d", a);
+    
+    return 0;
+    }
