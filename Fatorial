@@ -2,24 +2,18 @@
 
 int main()
 {
-    int a, i;
+    int d;
     
-    printf ("Digite um número e descubra o fatorial:\n");
-    scanf ("%d", &a);
+    printf ("Digite o ano:\n");
+    scanf ("%d", &d);
     
-    i=a-1;
-    
-    if (a == 0){
-        printf ("1");
+    if (d %4 != 0 && d %400 != 0){
+        printf ("Esse ano é bissexto");
     }
     
-    else {
-        while (i > 1){
-            a=a*i;
-            i--;
-        }
+    else{
+        printf ("Esse ano não é bissexto");
     }
-    printf ("%d", a);
-    
+
     return 0;
-    }
+}
