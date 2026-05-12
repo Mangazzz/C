@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int d;
+    
+    printf ("Digite quantos dias tem esse ano:\n");
+    scanf ("%d", &d);
+    
+    if (d == 365){
+        printf ("Esse ano não é bissexto");
+    }
+    
+    else if (d == 366){
+        printf ("Este ano é bissexto");
+    }
+    
+    else {
+        printf ("Definição não encontrada");
+    }
+
+    return 0;
+}
